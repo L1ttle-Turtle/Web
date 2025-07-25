@@ -1,0 +1,301 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0d1520;
+  color: #e6e6e6;
+}
+
+.navbar {
+  background: #0a0f1c;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: red;
+}
+
+.search {
+  width: 200px;
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: none;
+  background: #1a1f2e;
+  color: white;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li {
+  cursor: pointer;
+  color: #ffffffcc;
+  font-size: 14px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background: #101c2b;
+}
+
+.stat-box {
+  background: #1a273b;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  color: #b5d4ff;
+  width: 22%;
+}
+
+.movie-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #121f31;
+}
+
+.movie-table th, .movie-table td {
+  padding: 10px;
+  border-bottom: 1px solid #233145;
+  text-align: left;
+  vertical-align: top;
+}
+
+.movie-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.movie-info img {
+  width: 50px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.movie-title {
+  font-weight: bold;
+  color: #b6a0ff;
+}
+
+.movie-sub {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.badge {
+  background: #00c47c;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 13px;
+  color: black;
+}
+.filter-bar {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #333;
+  color: white;
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #222;
+  min-width: 180px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+  z-index: 999;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #444;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-item a {
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 15px;
+  display: block;
+}
+
+.nav-item:hover > a {
+  background-color: #333;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #222;
+  padding: 10px;
+  list-style: none;
+  min-width: 180px;
+  z-index: 1000;
+  border-radius: 4px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.dropdown-menu li {
+  padding: 8px 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background-color: #444;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.movie-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+  background-color: #141927;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.movie-table thead {
+  background-color: #1b2233;
+  font-weight: bold;
+}
+
+.movie-table th,
+.movie-table td {
+  padding: 12px 10px;
+  text-align: left;
+  border-bottom: 1px solid #2b3245;
+}
+
+.movie-table td img {
+  width: 60px;
+  height: auto;
+  border-radius: 4px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.movie-name {
+  display: flex;
+  align-items: center;
+}
+
+.movie-name-title {
+  font-weight: 600;
+}
+
+.movie-name-sub {
+  font-size: 13px;
+  color: #b0b0b0;
+}
+
+.status-label {
+  background-color: #0a3;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  display: inline-block;
+  color: #fff;
+}
+body {
+  background-color: #0f1117;
+  color: white;
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #00bcd4;
+}
+
+.movie-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #141927;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.movie-table th, .movie-table td {
+  padding: 12px;
+  border-bottom: 1px solid #2c354d;
+  text-align: left;
+}
+
+.movie-table thead {
+  background-color: #1f273c;
+}
+
+.movie-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.movie-name-title {
+  font-weight: bold;
+}
+
+.movie-name-sub {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.status-label {
+  background-color: #0a3;
+  padding: 3px 10px;
+  border-radius: 12px;
+  color: white;
+  font-size: 13px;
+}
+

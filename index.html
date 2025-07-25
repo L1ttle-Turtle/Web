@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phim Hay</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+  <div class="logo">PhimHay</div>
+  <input type="text" class="search" placeholder="Tìm kiếm phim..." />
+  <ul class="navbar-menu">
+    
+
+    <!-- Thể loại -->
+    <li class="nav-item dropdown">
+      <a href="#">Thể loại</a>
+      <ul class="dropdown-menu">
+        <li data-filter-type="genre" data-filter-value="Hành Động">Hành Động</li>
+        <li data-filter-type="genre" data-filter-value="Phiêu Lưu">Phiêu Lưu</li>
+        <li data-filter-type="genre" data-filter-value="Hoạt Hình">Hoạt Hình</li>
+        <li data-filter-type="genre" data-filter-value="Hài">Hài</li>
+        <li data-filter-type="genre" data-filter-value="Hình Sự">Hình Sự</li>
+        <li data-filter-type="genre" data-filter-value="Tài Liệu">Tài Liệu</li>
+        <li data-filter-type="genre" data-filter-value="Chính Kịch">Chính Kịch</li>
+        <li data-filter-type="genre" data-filter-value="Gia Đình">Gia Đình</li>
+        <li data-filter-type="genre" data-filter-value="Giả Tưởng">Giả Tưởng</li>
+        <li data-filter-type="genre" data-filter-value="Lịch Sử">Lịch Sử</li>
+        <li data-filter-type="genre" data-filter-value="Kinh Dị">Kinh Dị</li>
+        <li data-filter-type="genre" data-filter-value="Nhạc">Nhạc</li>
+        <li data-filter-type="genre" data-filter-value="Bí Ẩn">Bí Ẩn</li>
+        <li data-filter-type="genre" data-filter-value="Lãng Mạn">Lãng Mạn</li>
+        <li data-filter-type="genre" data-filter-value="Khoa Học Viễn Tưởng">Khoa Học Viễn Tưởng</li>
+        <li data-filter-type="genre" data-filter-value="Gây Cấn">Gây Cấn</li>
+        <li data-filter-type="genre" data-filter-value="Chiến Tranh">Chiến Tranh</li>
+        <li data-filter-type="genre" data-filter-value="Tâm Lý">Tâm Lý</li>
+        <li data-filter-type="genre" data-filter-value="Tình Cảm">Tình Cảm</li>
+        <li data-filter-type="genre" data-filter-value="Cổ Trang">Cổ Trang</li>
+        <li data-filter-type="genre" data-filter-value="Miền Tây">Miền Tây</li>
+      </ul>
+    </li>
+
+    <!-- Quốc gia -->
+    <li class="nav-item dropdown">
+      <a href="#">Quốc gia</a>
+      <ul class="dropdown-menu">
+        <li data-filter-type="country" data-filter-value="Âu Mỹ">Âu Mỹ</li>
+        <li data-filter-type="country" data-filter-value="Anh">Anh</li>
+        <li data-filter-type="country" data-filter-value="Trung Quốc">Trung Quốc</li>
+        <li data-filter-type="country" data-filter-value="Indonesia">Indonesia</li>
+        <li data-filter-type="country" data-filter-value="Việt Nam">Việt Nam</li>
+        <li data-filter-type="country" data-filter-value="Pháp">Pháp</li>
+        <li data-filter-type="country" data-filter-value="Hồng Kông">Hồng Kông</li>
+        <li data-filter-type="country" data-filter-value="Hàn Quốc">Hàn Quốc</li>
+        <li data-filter-type="country" data-filter-value="Nhật Bản">Nhật Bản</li>
+        <li data-filter-type="country" data-filter-value="Thái Lan">Thái Lan</li>
+        <li data-filter-type="country" data-filter-value="Đài Loan">Đài Loan</li>
+        <li data-filter-type="country" data-filter-value="Nga">Nga</li>
+        <li data-filter-type="country" data-filter-value="Hà Lan">Hà Lan</li>
+        <li data-filter-type="country" data-filter-value="Philippines">Philippines</li>
+        <li data-filter-type="country" data-filter-value="Ấn Độ">Ấn Độ</li>
+        <li data-filter-type="country" data-filter-value="Quốc gia khác">Quốc gia khác</li>
+      </ul>
+    </li>
+
+    <!-- Năm -->
+    <li class="nav-item dropdown">
+      <a href="#">Năm</a>
+      <ul class="dropdown-menu">
+        <li data-filter-type="year" data-filter-value="2004">2004</li>
+        <li data-filter-type="year" data-filter-value="2005">2005</li>
+        <li data-filter-type="year" data-filter-value="2006">2006</li>
+        <li data-filter-type="year" data-filter-value="2007">2007</li>
+        <li data-filter-type="year" data-filter-value="2008">2008</li>
+        <li data-filter-type="year" data-filter-value="2009">2009</li>
+        <li data-filter-type="year" data-filter-value="2010">2010</li>
+        <li data-filter-type="year" data-filter-value="2011">2011</li>
+        <li data-filter-type="year" data-filter-value="2012">2012</li>
+        <li data-filter-type="year" data-filter-value="2013">2013</li>
+        <li data-filter-type="year" data-filter-value="2014">2014</li>
+        <li data-filter-type="year" data-filter-value="2015">2015</li>
+        <li data-filter-type="year" data-filter-value="2016">2016</li>
+        <li data-filter-type="year" data-filter-value="2017">2017</li>
+        <li data-filter-type="year" data-filter-value="2018">2018</li>
+        <li data-filter-type="year" data-filter-value="2019">2019</li>
+        <li data-filter-type="year" data-filter-value="2020">2020</li>
+        <li data-filter-type="year" data-filter-value="2021">2021</li>
+        <li data-filter-type="year" data-filter-value="2022">2022</li>
+        <li data-filter-type="year" data-filter-value="2023">2023</li>
+        <li data-filter-type="year" data-filter-value="2024">2024</li>
+        <li data-filter-type="year" data-filter-value="2025">2025</li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+  <div class="stats">
+    <div class="stat-box">🎬 <strong>58</strong><br>Phim cập nhật hôm nay</div>
+    <div class="stat-box">📘 <strong>30082</strong><br>Tổng số lượng phim</div>
+    <div class="stat-box">📡 Cộng đồng Phim Hay</div>
+    <div class="stat-box">
+      
+          <a class="nav-link" href="developer.html"> Cho nhà phát triển </a>
+  
+    </div>
+  </div>
+
+  <table class="movie-table">
+  <thead>
+    <tr>
+      <th>TÊN</th>
+      <th>TÌNH TRẠNG</th>
+      <th>ĐỊNH DẠNG</th>
+      <th>NĂM</th>
+      <th>QUỐC GIA</th>
+      <th>NGÀY CẬP NHẬT</th>
+    </tr>
+  </thead>
+  <tbody id="movieTableBody">
+    <!-- Danh sách phim sẽ được thêm vào đây bằng JavaScript -->
+     
+  </tbody>
+</table>
+  <script src="script.js"></script>
+</body>
+</html>

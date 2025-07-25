@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Phim Hay - Trang quản lý</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .dev-options {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 100px;
+    }
+
+    .dev-option {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 20px 40px;
+      margin: 15px;
+      border-radius: 12px;
+      font-size: 24px;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      width: 250px;
+      text-align: center;
+    }
+
+    .dev-option:hover {
+      background-color: #333;
+      transform: translateY(-3px);
+    }
+
+    h1 {
+      color: white;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    body {
+      background-color: #000;
+      font-family: Arial, sans-serif;
+    }
+    .back-home {
+      display: inline-block;
+      margin-bottom: 16px;
+      background: #444;
+      color: white;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+    <a href="index.html" class="back-home">🏠 Quay lại Trang chủ</a>
+  <h1>TRANG QUẢN LÝ PHIM</h1>
+  <div class="dev-options">
+    <div class="dev-option" onclick="location.href='add.html'">➕ Thêm phim</div>
+    <div class="dev-option" onclick="location.href='edit.html'">✏️ Sửa phim</div>
+    <div class="dev-option" onclick="location.href='delete.html'">🗑️ Xoá phim</div>
+  </div>
+</body>
+</html>
