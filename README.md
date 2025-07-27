@@ -45,4 +45,4 @@ phim-hay/
 
 - Dự án phục vụ mục đích học tập và nghiên cứu cá nhân.
 - Thiết kế mô phỏng lại giao diện phổ biến của các website xem phim tại Việt Nam.
-- Người thực hiện: [Tên bạn] – Sinh viên / Lập trình viên.
+- Người thực hiện: Lê Phước Danh, Đỗ Gia Tiến.
