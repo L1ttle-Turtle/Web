@@ -17,18 +17,17 @@
 ## Cấu Trúc File Dự Án
 
 phim-hay/
-├── index.html # Trang chủ: hiển thị danh sách phim.
-├── add.html # Form thêm phim mới.
-├── edit.html # Danh sách phim để chọn sửa.
-├── edit_form.html # Form sửa phim chi tiết.
-├── delete.html # Trang xoá phim.
-├── developer.html # Thông tin dành cho nhà phát triển.
-├── film_watch.html # Trang xem phim / từng tập.
-│
-├── style.css # Giao diện, hiệu ứng, layout.
-├── script.js # Xử lý logic hiển thị, tương tác, localStorage.
-│
-└── README.md # Giới thiệu dự án (file này).
+index.html # Trang chủ: hiển thị danh sách phim
+add.html # Form thêm phim mới
+edit.html # Danh sách phim để chọn sửa
+edit_form.html # Form sửa phim chi tiết
+delete.html # Trang xoá phim
+developer.html # Thông tin dành cho nhà phát triển
+film_watch.html # Trang xem phim / từng tập
+style.css # Giao diện, hiệu ứng, layout
+script.js # Xử lý logic hiển thị, tương tác, localStorage
+ README.md # Giới thiệu dự án (file này)
+
 ## Hướng Dẫn Sử Dụng
 
 1. Mở `index.html` bằng trình duyệt (đề xuất Chrome).
