@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phim Yêu Thích</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Phim Yêu Thích</h1>
+    <table class="movie-table">
+      <thead>
+        <tr>
+          <th>Tên phim</th>
+          <th>Tình trạng</th>
+          <th>Định dạng</th>
+          <th>Năm</th>
+          <th>Quốc gia</th>
+          <th>Ngày cập nhật</th>
+        </tr>
+      </thead>
+      <tbody id="favoriteTableBody"></tbody>
+    </table>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const tableBody = document.getElementById("favoriteTableBody");
+      const favorites = JSON.parse(localStorage.getItem("favorites") || "[]");
+
+      if (favorites.length === 0) {
+        const tr = document.createElement("tr");
+        const td = document.createElement("td");
+        td.colSpan = 6;
+        td.textContent = "Chưa có phim nào trong mục yêu thích.";
+        td.style.textAlign = "center";
+        tr.appendChild(td);
+        tableBody.appendChild(tr);
+        return;
+      }
+
+      favorites.forEach((movie) => {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+          <td>
+            <div class="movie-name">
+              <img src="${movie.thumb}" alt="${movie.name}" width="60">
+              <div>
+                <div class="movie-name-title">
+                  <a href="film_watch.html?id=${movie.id}" class="movie-link" style="color: white;">${movie.name}</a>
+                </div>
+                <div class="movie-name-sub">${movie.name_en || ""}</div>
+              </div>
+            </div>
+          </td>
+          <td><span class="status-label">${movie.status}</span></td>
+          <td>${movie.format}</td>
+          <td>${movie.year}</td>
+          <td>${movie.country}</td>
+          <td>${movie.updatedAt}</td>
+        `;
+        tableBody.appendChild(tr);
+      });
+    });
+  </script>
+</body>
+</html>
